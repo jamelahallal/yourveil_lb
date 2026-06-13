@@ -1,5 +1,5 @@
 // Shared fabric data — used by both Fabrics.jsx and FabricDetail.jsx
-import modalthai from "../assests/Modal thailandi.jpeg";
+import logo from "../assests/logo.jpeg";
 import Lulwa1 from "../assests/Lulwaveil1.jpeg";
 import Lulwa2 from "../assests/Lulwaveil2.jpeg";
 import Lulwa3 from "../assests/Lulwaveil3.jpeg";
@@ -30,7 +30,7 @@ export const fabrics = [
   {
     id: "Lulwa Veil",
     name: "Lulwa Veil",
-    image: modalthai,
+    image: logo,
     tag: "Bestseller",
     desc: "The Kuwaiti lulwa Hijab is crafted from a soft, lightweight fabric that offers exceptional comfort and elegance throughout the day.",
     longDesc:
@@ -55,7 +55,7 @@ export const fabrics = [
   {
     id: "stretch linen thailandi",
     name: "Stretch linen thailandi",
-    image: modalthai,
+    image: logo,
     tag: "Lightweight",
     desc: "Crafted from premium stretch Thai linen fabric, this hijab combines a natural linen look with added flexibility for extra comfort and easy styling.",
     longDesc:
@@ -80,7 +80,7 @@ export const fabrics = [
   {
     id: "kashmir",
     name: "Kashmir",
-    image: modalthai,
+    image: logo,
     tag: "Lightweight",
     desc: "rafted from lightweight Kashmir fabric with a slightly sheer finish, this Kuwaiti-style hijab offers an elegant and airy feel.",
     longDesc:
@@ -108,7 +108,7 @@ export const fabrics = [
   {
     id: "bright summer",
     name: "Bright Summer",
-    image: modalthai,
+    image: logo,
     tag: "Everyday Comfort",
     desc: "Stretchy, breathable, and no-slip — jersey is your perfect companion for active days and everyday modest styling.",
     longDesc:
@@ -129,7 +129,7 @@ export const fabrics = [
   {
     id: "crepe",
     name: "Crepe",
-    image: modalthai,
+    image: logo,
     tag: "Luxurious",
     desc: "A silky-smooth fabric with a gentle sheen that captures light beautifully — ideal for special occasions and formal events.",
     longDesc:
@@ -153,7 +153,7 @@ export const fabrics = [
   {
     id: "saton crepe",
     name: "Saton Crepe",
-    image: modalthai,
+    image: logo,
     tag: "Soft & Airy",
     desc: "Crafted from premium satin crepe fabric, this hijab offers a smooth, elegant finish with a soft silky touch and a graceful drape.",
     longDesc:
@@ -176,7 +176,7 @@ export const fabrics = [
   {
     id: "crinckled cotton",
     name: "Crinckled Cotton",
-    image: modalthai,
+    image: logo,
     tag: "Textured",
     desc: "Made from soft, breathable crinkled cotton fabric, this hijab combines comfort with effortless elegance.",
     longDesc:
@@ -200,7 +200,7 @@ export const fabrics = [
   {
     id: "cotton jersey",
     name: "Cotton Jersey",
-    image: modalthai,
+    image: logo,
     tag: "Textured",
     desc: "A subtly textured weave that adds dimension and depth to your look while maintaining a refined, polished appearance.",
     longDesc:
