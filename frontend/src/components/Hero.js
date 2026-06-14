@@ -1,8 +1,26 @@
 import "../styles/Hero.css";
+import bannerImage from "../assests/logo1.jpeg"; // swap this for whichever photo you want as the banner
 
 function Hero({ setActivePage }) {
   return (
     <section className="hero">
+      {/* ── Banner ── */}
+      <div className="hero__banner">
+        <img
+          src={bannerImage}
+          alt="Your Veil LB — Latest Collection"
+          className="hero__banner-img"
+        />
+        <div className="hero__banner-overlay">
+          <button
+            className="btn btn--primary hero__banner-cta"
+            onClick={() => setActivePage("fabrics")}
+          >
+            Check Our Latest Collection
+          </button>
+        </div>
+      </div>
+
       <div className="hero__bg">
         <div className="hero__bg-circle hero__bg-circle--1" />
         <div className="hero__bg-circle hero__bg-circle--2" />
@@ -41,16 +59,6 @@ function Hero({ setActivePage }) {
             >
               Our Story
             </button>
-          </div>
-        </div>
-
-        <div className="hero__right">
-          <div className="hero__emblem">
-            <span className="hero__emblem-monogram">YV</span>
-            <div className="hero__emblem-divider" />
-            <span className="hero__emblem-brand">Your Veil LB</span>
-            <div className="hero__emblem-divider" />
-            <span className="hero__emblem-sub">Kuwaiti Hijabs · Lebanon</span>
           </div>
         </div>
       </div>
