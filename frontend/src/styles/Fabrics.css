@@ -48,17 +48,31 @@
   margin-bottom: 60px;
 }
 
+/* ─── Fabric card (merged, as button) ─── */
 .fabric-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  font-family: inherit;
   background: var(--parchment);
   border: 1px solid var(--border);
   overflow: hidden;
   position: relative;
   transition: transform 0.35s ease, box-shadow 0.35s ease;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
 }
 
 .fabric-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-strong);
+}
+
+.fabric-card:focus-visible {
+  outline: 2px solid var(--taupe);
+  outline-offset: 4px;
 }
 
 .fabric-card__swatch {
@@ -77,6 +91,12 @@
   background: linear-gradient(to bottom, transparent 60%, rgba(74, 55, 40, 0.08));
 }
 
+.fabric-card__swatch-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .fabric-card__swatch-label {
   font-family: var(--font-display);
   font-size: 48px;
@@ -89,6 +109,9 @@
 }
 
 .fabric-card__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   padding: 28px 28px 32px;
 }
 
@@ -137,6 +160,24 @@
   background: var(--cream);
   border: 1px solid var(--border);
   padding: 5px 12px;
+}
+
+.fabric-card__cta {
+  display: inline-flex;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 18px;
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--mocha);
+  transition: gap 0.25s ease, color 0.25s ease;
+}
+
+.fabric-card:hover .fabric-card__cta {
+  color: var(--espresso);
 }
 
 /* Why section */
@@ -216,11 +257,44 @@
     padding: 0 16px;
   }
   .fabrics__grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
   .fabric-card__swatch {
-    height: 160px;
+    height: 130px;
+  }
+  .fabric-card__body {
+    padding: 14px 14px 18px;
+  }
+  .fabric-card__tag {
+    font-size: 8px;
+    letter-spacing: 0.2em;
+    margin-bottom: 6px;
+  }
+  .fabric-card__name {
+    font-size: 17px;
+    margin-bottom: 8px;
+  }
+  .fabric-card__desc {
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .fabric-card__traits {
+    gap: 5px;
+  }
+  .fabric-card__trait {
+    font-size: 8px;
+    letter-spacing: 0.08em;
+    padding: 4px 8px;
+  }
+  .fabric-card__cta {
+    font-size: 9px;
+    padding-top: 12px;
   }
   .fabrics__why-grid {
     grid-template-columns: 1fr;
@@ -232,37 +306,4 @@
   .fabrics__why-item:last-child {
     border-bottom: none;
   }
-}
-
-/* ─── Fabric card as button ─── */
-.fabric-card {
-  display: block;
-  width: 100%;
-  text-align: left;
-  font-family: inherit;
-  -webkit-appearance: none;
-  appearance: none;
-  outline: none;
-}
-
-.fabric-card:focus-visible {
-  outline: 2px solid var(--taupe);
-  outline-offset: 4px;
-}
-
-.fabric-card__cta {
-  display: inline-flex;
-  align-items: center;
-  margin-top: 18px;
-  font-family: var(--font-body);
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--mocha);
-  transition: gap 0.25s ease, color 0.25s ease;
-}
-
-.fabric-card:hover .fabric-card__cta {
-  color: var(--espresso);
 }

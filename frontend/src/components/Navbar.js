@@ -3,8 +3,8 @@ import "../styles/Navbar.css";
 
 const navLinks = [
   { id: "home", label: "Home" },
-  { id: "about", label: "About" },
   { id: "fabrics", label: "Fabrics" },
+  { id: "about", label: "About" },
 ];
 
 function Navbar({ activePage, setActivePage }) {

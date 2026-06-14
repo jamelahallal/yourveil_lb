@@ -37,8 +37,8 @@ function Footer({ setActivePage }) {
           <span className="footer__col-title">Navigation</span>
           <ul className="footer__links">
             <li><button onClick={() => nav("home")}>Home</button></li>
-            <li><button onClick={() => nav("about")}>About Us</button></li>
             <li><button onClick={() => nav("fabrics")}>Our Fabrics</button></li>
+            <li><button onClick={() => nav("about")}>About Us</button></li>
           </ul>
         </div>
 
@@ -51,14 +51,14 @@ function Footer({ setActivePage }) {
           <div className="footer__social">
             <a
               className="footer__social-link"
-              href="https://instagram.com/yourveillb"
+              href="https://www.instagram.com/your_veil.lb"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Follow us on Instagram"
             >
               <InstagramIcon />
             </a>
-            <button onClick={() => window.open("https://instagram.com/yourveillb", "_blank")}>
+            <button onClick={() => window.open("https://www.instagram.com/your_veil.lb", "_blank")}>
                 Instagram
               </button>
           </div>

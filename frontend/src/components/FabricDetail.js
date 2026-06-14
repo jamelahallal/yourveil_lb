@@ -213,11 +213,11 @@ function FabricDetail({ fabric, setActivePage }) {
             <div className="fabric-detail__cta-row">
               <a
                 className="btn btn--primary"
-                href="https://wa.me/96170000000"
+                href="https://www.instagram.com/your_veil.lb"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Order via WhatsApp
+                Order via Instagram
               </a>
               <button className="btn btn--outline" onClick={handleBack}>
                 Browse More
